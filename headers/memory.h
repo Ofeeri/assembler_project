@@ -1,0 +1,17 @@
+int isRegisterName(char* str);
+void incrementDataCounter();
+void incrementInstructionCounter();
+void writeToInstructionArray(char* binaryWord);
+void writeToDataArray(char* binaryWord);
+int getIC();
+int getDC();
+void initIC();
+void initDC();
+int getRegisterNumber(char*);
+void encodeLabelsSecondPass();
+int writeMemoryToObjectsFile(char* filename);
+int writeToExternsFile(char* filename);
+int writeToEntriesFile(char* fileName);
+void initEntriesArray();
+void enterEntry(char* name);
+void freeEntriesArray();

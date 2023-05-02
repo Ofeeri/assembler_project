@@ -1,0 +1,10 @@
+char* convertToBinary(unsigned int operand, int length);
+void fillBits13to10(char* word, int isJump, int sourceType, int destType);
+void fillBits9to6(char* word, int opCode);
+void fillBits5to4(char* word, int assignmentType, int hasSource);
+void fillBits3to2(char* word, int assignmentType, int hasDest);
+void fillBits1to0(char* word,  int encodingType);
+void fillRegisterWord(char* word, int registerNum, int isSource, int isOnlyOperand, int ARE);
+void fillImmediateNumberWord(char* word, int number, int ARE);
+void encodeLabelAddress(char* word, int labelAddress, int encodingType);
+void deleteOutputFiles(char* filename);
